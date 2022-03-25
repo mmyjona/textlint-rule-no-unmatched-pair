@@ -34,10 +34,7 @@ const report = context => {
                 }
                 // Report Error for each existing context keys
                 source.contextLocations.forEach((contextLocation) => {
-                    report(node, new RuleError(`Not found pair character for ${contextLocation.pairMark.start}.
-                    
-You should close this sentence with ${contextLocation.pairMark.end}.
-This pair mark is called ${contextLocation.pairMark.key}.`, {
+                    report(node, new RuleError(`没有找到以下标点的成对标点 ${contextLocation.pairMark.start}，你应该添加以下标点 ${contextLocation.pairMark.end}。标点类型 ${contextLocation.pairMark.key}。`, {
                         index: (sentenceIndex - node.range[0]) + contextLocation.index
                     }));
                 });

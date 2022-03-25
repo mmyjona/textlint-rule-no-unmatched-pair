@@ -13,57 +13,67 @@
  */
 const PAIR_MARKS = [
     {
-        key: "double quote",
+        key: "英文双引号\"\"",
         start: `"`,
         end: `"`
     },
     {
-        key: "angled bracket[]",
+        key: "中括号[]",
         start: `[`,
         end: `]`
     },
     {
-        key: "round bracket()",
+        key: "英文圆括号()",
         start: `(`,
         end: `)`
     },
     {
-        key: "curly brace{}",
+        key: "大括号{}",
         start: `{`,
         end: `}`
     },
     {
-        key: "かぎ括弧「」",
+        key: "汉字半括号「」",
         start: `「`,
         end: `」`
     },
     {
-        key: "丸括弧（）",
+        key: "中日文括号（）",
         start: `（`,
         end: `）`
     },
     {
-        key: "二重かぎ括弧『』",
+        key: "空心汉字半括号『』",
         start: `『`,
         end: `』`
     },
     {
-        key: "波括弧｛｝",
+        key: "全角大括号｛｝",
         start: `｛`,
         end: `｝`
     },
     {
-        key: "角括弧［］",
+        key: "全角中括号［］",
         start: `［`,
         end: `］`
     },
     {
-        key: "重角括弧〚〛",
+        key: "空心方头括号〚〛",
         start: `〚`,
         end: `〛`
     },
     {
-        key: "隅付き括弧【】",
+        key: "全角角括号〈〉",
+        start: `〈`,
+        end: `〉`
+    },
+    {
+        key: "六角括号〔〕",
+        start: `〔`,
+        end: `〕`
+    },
+    {
+        key: "实心方头括号【】",
         start: `【`,
         end: `】`
     }
